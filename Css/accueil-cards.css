@@ -1,0 +1,296 @@
+body {
+  background: linear-gradient(135deg, #0f172a 60%, #22d3ee 100%);
+  color: #fff;
+  font-family: 'Fira Code', 'Segoe UI', monospace;
+  margin: 0;
+}
+header {
+  background: #111;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  color: #22d3ee;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+header nav a:hover {
+  color: #fff;
+}
+.main-grid {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 7.5rem auto 26rem; /* ~120px sous le header */
+  align-items: flex-start;
+}
+.articles-col {
+  flex: 2;
+}
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.article-card {
+  display: flex;
+  background: #1e293b;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #00bfff33;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.article-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px #22d3ee55;
+}
+.article-img img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+.article-texts {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-title {
+  font-size: 1.3rem;
+  color: #00bfff;
+  margin: 0 0 0.5rem 0;
+}
+.article-desc {
+  color: #b3eaff;
+  margin-bottom: 0.7rem;
+}
+.article-date, .article-author {
+  font-size: 0.95rem;
+  color: #7dd3fc;
+}
+.profil-banniere {
+  position: sticky;
+  top: 7.5rem;            /* même offset que la grille pour ne pas passer sous le header */
+  align-self: flex-start; /* indispensable pour que sticky fonctionne dans un conteneur flex */
+  max-width: 420px;       /* plus “grosse” qu’avant (350px) */
+  min-width: 280px;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(120deg, #ec4899cc 60%, #f472b6cc 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #ec489944;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.profil-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.profil-link:hover {
+  box-shadow: 0 8px 32px #ec4899aa;
+  transform: scale(1.03);
+}
+.profil-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 16px #22d3ee55;
+  transition: transform 0.2s;
+  display: block;
+  margin: 0 auto 1.2rem auto;
+}
+.profil-link:hover .profil-img {
+  transform: scale(1.06) rotate(-2deg);
+}
+.profil-img-back-wrapper {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.profil-img-back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  filter: brightness(0.7);
+  display: block;
+  transition: width 0.3s, height 0.3s;
+}
+.img-gradient-bottom {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 65%; /* augmente la hauteur du fondu */
+  border-radius: 0 0 18px 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(236,72,153,0.15) 40%,
+    rgba(236,72,153,0.45) 65%,
+    rgba(236,72,153,1) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+.profil-back-content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Dégradé d'opacité en bas de la photo */
+.profil-img-back::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 40%;
+  border-radius: 0 0 18px 18px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(236,72,153,0.7) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+.profil-infos h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.profil-infos p {
+  margin: 0;
+  color: #fdf6f6;
+  font-size: 1.05rem;
+}
+.profil-cta {
+  display: block;
+  margin-top: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+  background: #22d3ee;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.98rem;
+  transition: background 0.2s, color 0.2s;
+}
+.profil-link:hover .profil-cta {
+  background: #fff;
+  color: #ec4899;
+}
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  color: #7dd3fc;
+  font-size: 1rem;
+}
+.flip-card {
+  background: transparent;
+  width: 100%;
+  min-height: 420px;
+  perspective: 1200px;
+  cursor: pointer;
+  display: flex;
+  align-items: stretch;
+}
+.flip-card-inner,
+.flip-card-front,
+.flip-card-back {
+  min-height: 420px;
+  width: 100%;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(.4, .8, .2, 1);
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #ec4899cc 60%, #f472b6cc 100%);
+  box-shadow: 0 4px 24px #ec489944;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  top: 0;
+  left: 0;
+}
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem; /* optionnel, ajuste selon besoin */
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.bounce-pulse {
+  animation: bouncePulse 1.2s infinite alternate;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 16px #22d3ee55;
+}
+@keyframes bouncePulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 #22d3ee44; }
+  60% { transform: scale(1.08); box-shadow: 0 0 24px 8px #22d3ee55; }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 #22d3ee44; }
+}
+@media (max-width: 900px) {
+  .main-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 98vw;
+    margin: 6rem auto 1.5rem;
+  }
+  .profil-banniere {
+    position: static;
+    margin: 0 auto;
+    max-width: 98vw;
+    min-width: unset;
+  }
+  .flip-card, .flip-card-inner, .flip-card-front, .flip-card-back {
+    min-height: 320px;
+  }
+  .article-img img {
+    width: 120px;
+    height: 90px;
+  }
+}
