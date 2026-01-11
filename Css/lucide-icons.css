@@ -1,0 +1,124 @@
+/* Styles pour les icônes Lucide - Intégration professionnelle */
+
+/* Icônes générales */
+[data-lucide] {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Icône de thème */
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Icône wave dans le hero */
+.wave-icon {
+  width: 32px;
+  height: 32px;
+  color: #2563eb;
+  animation: wave-animation 2s ease-in-out infinite;
+}
+
+@keyframes wave-animation {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+/* Icône dans les badges de section */
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+/* Icônes dans les tags */
+.tag [data-lucide] {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+/* Icônes de passion */
+.passion-icon [data-lucide] {
+  width: 24px;
+  height: 24px;
+  color: #2563eb;
+  transition: color 0.3s ease;
+}
+
+.passion-item:hover .passion-icon [data-lucide] {
+  color: #1d4ed8;
+}
+
+/* Icônes avatar */
+.avatar-icon {
+  width: 24px;
+  height: 24px;
+  color: #6b7280;
+}
+
+/* Icônes dans la section contact */
+.section-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: -3px;
+  color: #2563eb;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  color: #2563eb;
+  margin-right: 8px;
+}
+
+/* Icône dans le bouton d'envoi */
+.btn-text [data-lucide] {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wave-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .section-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: -2px;
+  }
+  
+  .passion-icon [data-lucide] {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Thème sombre */
+[data-theme="dark"] .avatar-icon {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .wave-icon,
+[data-theme="dark"] .section-icon,
+[data-theme="dark"] .contact-icon,
+[data-theme="dark"] .passion-icon [data-lucide] {
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .passion-item:hover .passion-icon [data-lucide] {
+  color: #3b82f6;
+}
