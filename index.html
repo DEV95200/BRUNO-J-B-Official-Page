@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gaëtan Bruno Jean-Baptiste - Portfolio Développeur Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Gaëtan Bruno Jean-Baptiste, étudiant en BUT MMI à l'IUT de Cergy-Pontoise. Découvrez mes projets et compétences.">
+  <meta name="theme-color" content="#2563eb" />
+
+  
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons (icônes modernes et sobres) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="Css/portfolio.css" />
+  <link rel="stylesheet" href="Css/lucide-icons.css" />
+  <link rel="stylesheet" href="Css/about-responsive.css" />
+  <link rel="stylesheet" href="Css/final-polish.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Aller au contenu</a>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-initial">G</span>
+        <span class="brand-name">Gaëtan</span>
+      </div>
+      
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+
+      <button class="theme-toggle" type="button" aria-label="Basculer en mode sombre" title="Mode sombre">
+        <i data-lucide="moon" class="theme-icon" aria-hidden="true"></i>
+      </button>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Progress Navigation (sections) -->
+  <div class="progress-bar-container" aria-hidden="false">
+    <div class="progress-line"></div>
+    <div class="progress-dots" role="navigation" aria-label="Navigation des sections">
+      <a class="progress-dot" href="#hero" data-section="hero"><span class="dot-label">Accueil</span></a>
+      <a class="progress-dot" href="#about" data-section="about"><span class="dot-label">À propos</span></a>
+      <a class="progress-dot" href="#skills" data-section="skills"><span class="dot-label">Compétences</span></a>
+      <a class="progress-dot" href="#projects" data-section="projects"><span class="dot-label">Projets</span></a>
+      
+      <a class="progress-dot" href="#contact" data-section="contact"><span class="dot-label">Contact</span></a>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Gaëtan<br><span class="title-accent">Bruno Jean-Baptiste</span></h1>
+          <p class="hero-subtitle">Étudiant en BUT MMI à l'IUT de Cergy-Pontoise (Sarcelles) passionné par le numérique, la création et l'entrepreneuriat. Curieux et déterminé, j'aime imaginer des projets utiles et comprendre comment les choses fonctionnent.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-photo">
+            <img src="images/PID - Photo .jpg" alt="Gaëtan Bruno Jean-Baptiste" class="profile-img">
+            <div class="photo-overlay">
+              <i data-lucide="hand-wave" class="wave-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-modern">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i data-lucide="rocket" class="badge-icon"></i> Mon parcours</span>
+        <h2>À propos de moi</h2>
+        <p class="section-subtitle">Découvrez mon univers, ma passion et ma vision du développement web</p>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Carrousel de cartes About -->
+        <div class="about-carousel-wrapper">
+          <!-- Navigation du carrousel -->
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" aria-label="Carte précédente">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" aria-label="Carte suivante">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Container du carrousel -->
+          <div class="about-carousel-container">
+            <div class="about-carousel-track">
+              
+              <!-- Carte 1: Profil Principal -->
+              <div class="about-main-card carousel-card active" data-card="0">
+                <div class="profile-section">
+                  <div class="profile-avatar">
+                    <div class="avatar-ring">
+                      <div class="avatar-content">
+                        <img src="images/PID - Photo .jpg" alt="Gaëtan Bruno Jean-Baptiste" class="avatar-img">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-info">
+                    <h3>Gaëtan Bruno Jean-Baptiste</h3>
+                    <p class="profile-role">Étudiant BUT MMI - Développeur Web</p>
+                    <div class="profile-tags">
+                      <span class="tag"><i data-lucide="graduation-cap"></i> BUT MMI Cergy-Pontoise</span>
+                      <span class="tag"><i data-lucide="code"></i> Développement Web</span>
+                      <span class="tag"><i data-lucide="star"></i> Entrepreneur</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-section">
+                  <p class="main-text">
+                    <span class="highlight">Étudiant en BUT MMI</span> à l'IUT de Cergy-Pontoise (Sarcelles, France), je suis passionné par le numérique et la création. 
+                    Curieux et déterminé, j'aime imaginer des projets utiles et comprendre comment les choses fonctionnent.
+                  </p>
+                  <p class="secondary-text">
+                    Mon expérience en tant que conseiller de vente chez PLUGANDGO et mon engagement bénévole 
+                    m'ont appris l'importance de la communication et du travail d'équipe dans la réussite de tout projet.
+                  </p>
+                  <div class="passion-items">
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="palette"></i></div>
+                      <div class="passion-content">
+                        <h4>Création Numérique</h4>
+                        <p>Projets multimédias innovants</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="briefcase"></i></div>
+                      <div class="passion-content">
+                        <h4>Entrepreneuriat</h4>
+                        <p>Esprit d'initiative et leadership</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="search"></i></div>
+                      <div class="passion-content">
+                        <h4>Curiosité</h4>
+                        <p>Expérimentation constante</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carte 2: Compétences Techniques -->
+              <div class="about-main-card carousel-card" data-card="1">
+                <div class="profile-section">
+                  <div class="profile-avatar">
+                    <div class="avatar-ring">
+                      <div class="avatar-content">
+                        <i data-lucide="laptop" class="avatar-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-info">
+                    <h3>Mes Compétences</h3>
+                    <p class="profile-role">Stack Technique & Communication</p>
+                    <div class="profile-tags">
+                      <span class="tag">Développement Web</span>
+                      <span class="tag">Gestion Projet</span>
+                      <span class="tag">E-commerce</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-section">
+                  <p class="main-text">
+                    Mes <span class="highlight">compétences techniques</span> couvrent le développement web, la gestion de projet et la communication numérique. 
+                    Je développe constamment mes connaissances dans ces domaines clés.
+                  </p>
+                  <p class="secondary-text">
+                    Mon expérience en vente et communication, associée à ma formation technique, 
+                    me permet d'avoir une approche complète des projets numériques.
+                  </p>
+                  <div class="passion-items">
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="globe"></i></div>
+                      <div class="passion-content">
+                        <h4>Développement Web</h4>
+                        <p>HTML, CSS, JavaScript, PHP</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="bar-chart"></i></div>
+                      <div class="passion-content">
+                        <h4>Gestion de Projet</h4>
+                        <p>Organisation et leadership</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="message-circle"></i></div>
+                      <div class="passion-content">
+                        <h4>Communication</h4>
+                        <p>Numérique et relation client</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carte 3: Expérience Professionnelle -->
+              <div class="about-main-card carousel-card" data-card="2">
+                <div class="profile-section">
+                  <div class="profile-avatar">
+                    <div class="avatar-ring">
+                      <div class="avatar-content">
+                        <i data-lucide="briefcase" class="avatar-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-info">
+                    <h3>Mon Expérience</h3>
+                    <p class="profile-role">Stage & Bénévolat</p>
+                    <div class="profile-tags">
+                      <span class="tag">PLUGANDGO</span>
+                      <span class="tag">Conseiller Vente</span>
+                      <span class="tag">Communication</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-section">
+                  <p class="main-text">
+                    Mon <span class="highlight">expérience professionnelle</span> chez PLUGANDGO en tant que conseiller de vente m'a appris l'importance de l'écoute client et de la communication.
+                  </p>
+                  <p class="secondary-text">
+                    Mon engagement bénévole au foyer associatif "Jeunes fourrillers de Soula" 
+                    m'a permis de développer mes compétences en communication digitale et gestion de contenu.
+                  </p>
+                  <div class="passion-items">
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="shopping-bag"></i></div>
+                      <div class="passion-content">
+                        <h4>Conseil Vente</h4>
+                        <p>Accueil et relation client</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="file-text"></i></div>
+                      <div class="passion-content">
+                        <h4>Communication</h4>
+                        <p>Blog et contenu digital</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="users"></i></div>
+                      <div class="passion-content">
+                        <h4>Travail d'équipe</h4>
+                        <p>Autonomie et collaboration</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carte 4: Qualités & Vision -->
+              <div class="about-main-card carousel-card" data-card="3">
+                <div class="profile-section">
+                  <div class="profile-avatar">
+                    <div class="avatar-ring">
+                      <div class="avatar-content">
+                        <i data-lucide="star" class="avatar-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-info">
+                    <h3>Mes Qualités</h3>
+                    <p class="profile-role">Leadership & Communication</p>
+                    <div class="profile-tags">
+                      <span class="tag">Leadership</span>
+                      <span class="tag">Esprit d'équipe</span>
+                      <span class="tag">Communication</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="description-section">
+                  <p class="main-text">
+                    <span class="highlight">Déterminé et communicant</span>, j'aime mener des projets avec un esprit d'équipe fort. 
+                    Ma curiosité naturelle me pousse à toujours expérimenter et apprendre.
+                  </p>
+                  <p class="secondary-text">
+                    Mes centres d'intérêt incluent la conception de projets et de marques, 
+                    l'animation 3D, et surtout la recherche constante de nouvelles technologies.
+                  </p>
+                  <div class="passion-items">
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="target"></i></div>
+                      <div class="passion-content">
+                        <h4>Leadership</h4>
+                        <p>Guide et inspire les équipes</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="palette"></i></div>
+                      <div class="passion-content">
+                        <h4>Créativité</h4>
+                        <p>Animation 3D et design de marques</p>
+                      </div>
+                    </div>
+                    <div class="passion-item">
+                      <div class="passion-icon"><i data-lucide="microscope"></i></div>
+                      <div class="passion-content">
+                        <h4>Expérimentation</h4>
+                        <p>Curiosité et innovation constante</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Indicateurs du carrousel -->
+          <div class="carousel-indicators">
+            <button class="indicator active" data-card="0" aria-label="Carte 1"></button>
+            <button class="indicator" data-card="1" aria-label="Carte 2"></button>
+            <button class="indicator" data-card="2" aria-label="Carte 3"></button>
+            <button class="indicator" data-card="3" aria-label="Carte 4"></button>
+          </div>
+        </div>
+
+        <!-- Carrousel Stats Accomplissements -->
+        <div class="stats-carousel-wrapper">
+          <!-- Navigation du carrousel stats -->
+          <div class="carousel-controls stats-controls">
+            <button class="carousel-btn carousel-prev-stats" aria-label="Stats précédentes">
+              <span>‹</span>
+            </button>
+            <button class="carousel-btn carousel-next-stats" aria-label="Stats suivantes">
+              <span>›</span>
+            </button>
+          </div>
+
+          <div class="stats-carousel-container">
+            <div class="stats-carousel-track">
+              
+              <!-- Groupe 1: Accomplissements Académiques -->
+              <div class="stats-container carousel-stats active" data-stats="0">
+                <h3 class="stats-title"><i data-lucide="graduation-cap"></i> Accomplissements Académiques</h3>
+                <div class="modern-stats">
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="book"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="2">0</span>
+                      <span class="stat-plus">+</span>
+                      <span class="stat-label">Années d'études</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 60%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="trophy"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="95">0</span>
+                      <span class="stat-percent">%</span>
+                      <span class="stat-label">Moyenne générale</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 95%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="file-text"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="8">0</span>
+                      <span class="stat-plus">+</span>
+                      <span class="stat-label">Modules validés</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 80%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Groupe 2: Réalisations Techniques -->
+              <div class="stats-container carousel-stats" data-stats="1">
+                <h3 class="stats-title"><i data-lucide="laptop"></i> Réalisations Techniques</h3>
+                <div class="modern-stats">
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="folder"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="15">0</span>
+                      <span class="stat-plus">+</span>
+                      <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 85%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="rocket"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="6">0</span>
+                      <span class="stat-plus">+</span>
+                      <span class="stat-label">Technologies maîtrisées</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 70%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="settings"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="500">0</span>
+                      <span class="stat-plus">+</span>
+                      <span class="stat-label">Heures de code</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Groupe 3: Compétences Personnelles -->
+              <div class="stats-container carousel-stats" data-stats="2">
+                <h3 class="stats-title"><i data-lucide="star"></i> Compétences Personnelles</h3>
+                <div class="modern-stats">
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="flame"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="100">0</span>
+                      <span class="stat-percent">%</span>
+                      <span class="stat-label">Motivation</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 100%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="zap"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="95">0</span>
+                      <span class="stat-percent">%</span>
+                      <span class="stat-label">Persévérance</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 95%;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="stat-card">
+                    <div class="stat-icon"><i data-lucide="handshake"></i></div>
+                    <div class="stat-content">
+                      <span class="stat-number" data-target="90">0</span>
+                      <span class="stat-percent">%</span>
+                      <span class="stat-label">Collaboration</span>
+                    </div>
+                    <div class="stat-progress">
+                      <div class="progress-bar" style="--progress: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Indicateurs du carrousel stats -->
+          <div class="carousel-indicators stats-indicators">
+            <button class="indicator active" data-stats="0" aria-label="Stats 1"></button>
+            <button class="indicator" data-stats="1" aria-label="Stats 2"></button>
+            <button class="indicator" data-stats="2" aria-label="Stats 3"></button>
+          </div>
+        </div>
+
+        <!-- Carrousel Timeline Parcours -->
+        <div class="timeline-carousel-wrapper">
+          <!-- Navigation du carrousel timeline -->
+          <div class="carousel-controls timeline-controls">
+            <button class="carousel-btn carousel-prev-timeline" aria-label="Parcours précédent">
+              <span>‹</span>
+            </button>
+            <button class="carousel-btn carousel-next-timeline" aria-label="Parcours suivant">
+              <span>›</span>
+            </button>
+          </div>
+
+          <div class="timeline-carousel-container">
+            <div class="timeline-carousel-track">
+              
+              <!-- Parcours 1: Formation Actuelle -->
+              <div class="timeline-container carousel-timeline active" data-timeline="0">
+                <h3 class="timeline-title"><i data-lucide="graduation-cap"></i> Formation</h3>
+                <div class="modern-timeline">
+                  <div class="timeline-line"></div>
+                  
+                  <div class="timeline-item active">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2025 - 2027</div>
+                      <div class="timeline-content">
+                        <h4>BUT MMI</h4>
+                        <p>IUT de Cergy-Pontoise - Sarcelles, France</p>
+                        <div class="timeline-skills">
+                          <span>Multimédia</span>
+                          <span>Internet</span>
+                          <span>Communication</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2025</div>
+                      <div class="timeline-content">
+                        <h4>Baccalauréat Général</h4>
+                        <p>Mention Assez Bien</p>
+                        <div class="timeline-skills">
+                          <span>NSI</span>
+                         
+                          <span>SES</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Parcours 2: Projets Marquants -->
+              <div class="timeline-container carousel-timeline" data-timeline="1">
+                <h3 class="timeline-title">� Expérience</h3>
+                <div class="modern-timeline">
+                  <div class="timeline-line"></div>
+                  
+                  <div class="timeline-item active">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2025</div>
+                      <div class="timeline-content">
+                        <h4>Conseiller de vente - Stage</h4>
+                        <p>PLUGANDGO - Stage professionnel</p>
+                        <div class="timeline-skills">
+                          <span>Accueil client</span>
+                          <span>Gestion commandes</span>
+                          <span>Conseil</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2024-2025</div>
+                      <div class="timeline-content">
+                        <h4>Bénévole Communication</h4>
+                        <p>Foyer associatif "Jeunes fourrillers de Soula" - Engagement bénévole</p>
+                        <div class="timeline-skills">
+                          <span>Blog interne</span>
+                          <span>Communication digitale</span>
+                          <span>Travail d'équipe</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2024</div>
+                      <div class="timeline-content">
+                        <h4>Projets personnels</h4>
+                        <p>Animation 3D et conception de projets numériques</p>
+                        <div class="timeline-skills">
+                          <span>Animation 3D</span>
+                          <span>Conception</span>
+                          <span>E-commerce</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Parcours 3: Objectifs Futurs -->
+              <div class="timeline-container carousel-timeline" data-timeline="2">
+                <h3 class="timeline-title"><i data-lucide="target"></i> Objectifs Futurs</h3>
+                <div class="modern-timeline">
+                  <div class="timeline-line"></div>
+                  
+                  <div class="timeline-item active">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2026</div>
+                      <div class="timeline-content">
+                        <h4>Stage en Entreprise</h4>
+                        <p>Intégration dans une équipe de développement</p>
+                        <div class="timeline-skills">
+                          <span>Travail d'équipe</span>
+                          <span>Projets réels</span>
+                          <span>Méthodologies</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2027</div>
+                      <div class="timeline-content">
+                        <h4>Diplôme BUT MMI</h4>
+                        <p>Obtention du diplôme et spécialisation</p>
+                        <div class="timeline-skills">
+                          <span>Full-Stack</span>
+                          <span>Gestion projet</span>
+                          <span>Leadership</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <div class="marker-ring"></div>
+                      <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                      <div class="timeline-date">2028+</div>
+                      <div class="timeline-content">
+                        <h4>Carrière Professionnelle</h4>
+                        <p>Développeur senior et création d'entreprise</p>
+                        <div class="timeline-skills">
+                          <span>Innovation</span>
+                          <span>Entrepreneuriat</span>
+                          <span>Impact</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Indicateurs du carrousel timeline -->
+          <div class="carousel-indicators timeline-indicators">
+            <button class="indicator active" data-timeline="0" aria-label="Parcours 1"></button>
+            <button class="indicator" data-timeline="1" aria-label="Parcours 2"></button>
+            <button class="indicator" data-timeline="2" aria-label="Parcours 3"></button>
+          </div>
+        </div>
+
+        <!-- Card compétences rapides -->
+        <div class="quick-skills">
+          <h3>Technologies favorites</h3>
+          <div class="skill-bubbles">
+            <div class="skill-bubble" style="--delay: 0s;">
+              <span class="skill-icon"><i data-lucide="atom"></i></span>
+              <span>React</span>
+            </div>
+            <div class="skill-bubble" style="--delay: 0.1s;">
+              <span class="skill-icon"><i data-lucide="circle"></i></span>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-bubble" style="--delay: 0.2s;">
+              <span class="skill-icon"><i data-lucide="palette"></i></span>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-bubble" style="--delay: 0.3s;">
+              <span class="skill-icon"><i data-lucide="zap"></i></span>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-bubble" style="--delay: 0.4s;">
+              <span class="skill-icon"><i data-lucide="code"></i></span>
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Compétences</h2>
+        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Front-end</h3>
+          <div class="skills-list">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Sass</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Back-end</h3>
+          <div class="skills-list">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">API REST</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Outils</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe Suite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Projets</h2>
+      <p class="section-subtitle">Une sélection de projets (web, UI/UX et expérimentations). Cliquez sur une carte pour voir les détails.</p>
+    </div>
+
+    <!-- Mini Bannière de notification -->
+    <div class="projects-banner">
+      <div class="banner-content">
+        <div class="banner-icon"><i data-lucide="construction"></i></div>
+        <div class="banner-text">
+          <h3>Section en développement</h3>
+          <p>Ces projets sont actuellement en cours de finalisation. Le contenu détaillé sera bientôt disponible !</p>
+        </div>
+        <div class="banner-status">
+          <span class="status-badge">Bientôt disponible</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-toolbar" role="region" aria-label="Filtres des projets">
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="tous">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="front">Front</button>
+        <button class="filter-btn" data-filter="back-end">Back-end</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="gis">GIS</button>
+      </div>
+
+      <div class="project-search">
+        <label class="sr-only" for="projectSearch">Rechercher un projet</label>
+        <input id="projectSearch" type="search" placeholder="Rechercher (ex: React, API, GIS...)" autocomplete="off" />
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      
+      
+
+      <!-- Projet 2: Application de gestion de tâches -->
+      <div class="project-card" data-category="front">
+        <div class="project-image">
+          <img src="images/project-placeholder.jpg" alt="Application de gestion" class="project-img">
+          <div class="project-overlay">
+            <div class="project-status">Conceptualisation</div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-icon">
+              <img src="images/icons/front-icon.png" alt="Front-end" class="category-icon">
+            </div>
+            <div class="project-meta">
+              <h3>Application de gestion de tâches</h3>
+              <span class="project-category">Front</span>
+            </div>
+          </div>
+          <p>App responsive : CRUD, filtres, persistance locale et UX fluide.</p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">LocalStorage</span>
+            <span class="tech-tag">UX</span>
+          </div>
+          <div class="project-links">
+            <button class="project-link" disabled>Détails</button>
+            <button class="project-link primary" disabled>Démo</button>
+            <button class="project-link" disabled>Code</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3: Mini E-commerce -->
+      <div class="project-card" data-category="back-end">
+        <div class="project-image">
+          <img src="images/project-placeholder.jpg" alt="Mini E-commerce" class="project-img">
+          <div class="project-overlay">
+            <div class="project-status">Planifié</div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-icon">
+              <img src="images/icons/backend-icon.png" alt="Back-end" class="category-icon">
+            </div>
+            <div class="project-meta">
+              <h3>Mini E-commerce</h3>
+              <span class="project-category">Back-end</span>
+            </div>
+          </div>
+          <p>Boutique en ligne : produits, panier et checkout (structure démonstration).</p>
+          <div class="project-tech">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Stripe</span>
+          </div>
+          <div class="project-links">
+            <button class="project-link" disabled>Détails</button>
+            <button class="project-link primary" disabled>Démo</button>
+            <button class="project-link" disabled>Code</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Projet 5: Prototype UI/UX -->
+      <div class="project-card" data-category="uiux">
+        <div class="project-image">
+          <img src="images/project-placeholder.jpg" alt="Prototype UI/UX" class="project-img">
+          <div class="project-overlay">
+            <div class="project-status">Design</div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-icon">
+              <img src="images/icons/uiux-icon.png" alt="UI/UX" class="category-icon">
+            </div>
+            <div class="project-meta">
+              <h3>Prototype UI/UX</h3>
+              <span class="project-category">UI/UX</span>
+            </div>
+          </div>
+          <p>Prototype (wireframe → design) + guidelines (typography, components).</p>
+          <div class="project-tech">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Design System</span>
+            <span class="tech-tag">UI</span>
+          </div>
+          <div class="project-links">
+            <button class="project-link" disabled>Détails</button>
+            <button class="project-link primary" disabled>Démo</button>
+            <button class="project-link" disabled>Code</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  
+  
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p class="section-subtitle">Intéressé par mon profil ? Contactons-nous !</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Informations</h3>
+          <div class="contact-item">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <span>gaetan.bruno.jean.baptiste@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="phone" class="contact-icon"></i>
+            <span>06 94 05 09 43</span>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="map-pin" class="contact-icon"></i>
+            <span>Sarcelles, France</span>
+          </div>
+          <div class="contact-item">
+            <i data-lucide="globe" class="contact-icon"></i>
+            <span>Français (natif) - Anglais (A1)</span>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://linkedin.com/in/gaetan-bruno-jean-baptiste" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Portfolio</a>
+          </div>
+        </div>
+        
+        <form class="contact-form" action="contact_simple.php" method="POST">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Gaëtan Bruno Jean-Baptiste. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="Script/main.js"></script>
+  <script src="Script/about-carousel.js"></script>
+  
+  <!-- Initialisation des icônes Lucide -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialiser les icônes Lucide
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+        console.log('Icônes Lucide initialisées');
+      }
+      
+      // Gestion des messages de contact
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('success') === '1') {
+        alert('Message envoyé avec succès !');
+      } else if (urlParams.get('error')) {
+        alert('Erreur lors de l\'envoi : ' + urlParams.get('error'));
+      }
+    });
+  </script>
+</body>
+</html>
